@@ -1,0 +1,2 @@
+- Hovering skill-cards
+- menu hovering (all menu items have after, hovered and active have thiers in the theme's color, except hover have a sligtly transparent version.)

@@ -1,0 +1,23 @@
+.btn.btn-primary {
+    padding: 10px 20px !important;
+    border-radius: 0;
+    border: 3px solid $theme-color1 !important;
+    background: transparent !important;
+    color: #000 !important;
+    transition: background-color $trans-delay $bezier, color $trans-delay $bezier, transform $trans-delay $bezier;
+    font-size: 14px;
+    font-weight: 600;
+    transform: scale(1);
+
+    &:hover {
+        background-color: $theme-color1 !important;
+        color: #fff !important;
+        transform: scale(1.1);
+    }
+}
+
+body.dark {
+    .btn.btn-primary {
+        color: #fff !important;
+    }
+}

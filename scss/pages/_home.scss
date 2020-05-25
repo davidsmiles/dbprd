@@ -1,0 +1,440 @@
+body {
+  background-color: #fff;
+  transition: background-color $trans-delay $bezier;
+
+  &.dark {
+    background-color: #000;
+  }
+}
+
+.blue-line {
+  position: relative;
+  display: block;
+
+  &:before {
+    content: "";
+    width: 67px;
+    height: 3px;
+    background-color: $theme-color1;
+    position: absolute;
+    z-index: 1;
+    top: -11px;
+    left: 0;
+
+    @media #{$mobile} {
+      width: 53px;
+      top: -8px;
+    }
+  }
+}
+
+#hero-header {
+  width: 500px;
+
+  @media #{$mobile} {
+    width: fit-content;
+    font-size: 35px;
+    margin: 0 auto;
+  }
+}
+
+.slider-text h1 {
+  color: #000;
+}
+
+body {
+  &.dark {
+    .slider-text h1 {
+      color: #fff;
+    }
+
+    .get-started-btn {
+      color: #fff !important;
+    }
+    
+  }
+}
+
+
+.slider-text .one-forth {
+  padding: 0;
+  align-self: unset !important;
+  padding-top: 196px;
+
+  @media #{$tab} {
+    padding-top: 110px;
+  }
+
+  @media #{$mobile} {
+    padding: 0;
+  }
+}
+
+.slider-text {
+  align-items: unset !important;
+  flex-direction: column;
+  height: auto;
+}
+
+.skill-section {
+  padding-top: 60px;
+}
+
+.hero-wrap .overlay {
+  background: none;
+  background-color: transparent;
+} 
+
+.vert-bar {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  box-sizing: content-box;
+
+  &.vert-bar-footer {
+    position: relative;
+    height: 60px;
+    top: 50px;
+    padding: 50px 0 20px;
+  }
+
+  div {
+    width: 3px;
+    background-color: $theme-color1;
+  }
+}
+
+.hero-wrap {
+  height: auto;
+  overflow: hidden;
+  position: unset;
+}
+
+body {
+  &.dark {
+    .hero-wrap {
+      position: unset;
+    }
+  }
+}
+
+.pentagon-wrap {
+  position: relative;
+}
+
+.pentagon {
+  position: absolute;
+
+  svg {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.pentagon-1 {
+  height: 650px;
+  position: absolute;
+  right: 0;
+  top: 129px;
+  z-index: -1;
+  overflow: hidden;
+
+  @media #{$tab} {
+    height: 600px;
+    top: 51px;
+  }
+
+  @media #{$mobile} {
+    height: 400px;
+    top: 154px;
+  }
+
+  svg {
+    position: relative;
+    left: 58px;
+    top: 48px;
+  }
+}
+
+body {
+  &.dark {
+    .pentagon-1 {
+      // z-index: 2; 
+    }
+  }
+}
+
+.pentagon-2 {
+  height: 250px;
+  right: 0;
+  top: -115px;
+
+  @media #{$mobile} {
+    height: 160px;
+    top: -50px;
+  }
+}
+
+.pentagon-3 {
+  height: 300px;
+  right: 0px;
+  overflow: hidden;
+
+  @media #{$tab} {
+    height: 200px;
+  }
+
+  @media #{$mobile} {
+    height: 150px;
+    top: -50px;
+    right: 0;
+  }
+
+  @media #{$small_mobile} {
+    top: -115px;
+  }
+
+  svg {
+    position: relative;
+    left: 49px;
+  }
+
+}
+
+.ftco-section {
+  padding: 0;
+
+  .main-title {
+    position: relative;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 50px;
+    transition: color $trans-delay $bezier;
+    font-size: 1.7rem;
+
+    &:before {
+      content: "";
+      width: 44px;
+      height: 3px;
+      background: $theme-color1;
+      position: absolute;
+      z-index: 1;
+      top: -5px;
+    }
+  }
+
+  .main-title-desc {
+    color: #000;
+    font-size: 17px;
+    transition: color $trans-delay $bezier;
+  }
+}
+
+body.dark {
+  .ftco-section {
+   
+    .main-title {
+      color: #fff;
+    }
+
+    .main-title-desc {
+      color: #fff;
+    }
+  }
+}
+
+.about-slide {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  background-size: cover;
+
+  @media #{$small_mobile} {
+    height: 250px !important;
+    margin-bottom: 20px;
+  }
+
+  &.team-work {
+    height: 450px;
+    background-image: url("../images/home/business-people-meeting_53876-25158 1.svg");
+  }
+
+  &.precision {
+    background-image: url("../images/home/briefing-directors_1098-14327 1.svg");
+  }
+
+  &.philosophy {
+    background-image: url("../images/home/presentation-financial-project_1098-14939 1.png");
+  }
+
+  h5 {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1;
+  }
+
+  p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 17px;
+  }
+}
+
+.values {
+  h5,p {
+    transition: color $trans-delay $bezier;
+  }
+
+  h5 {
+    color: #000;
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 15px;
+    color: #000;
+  }
+}
+
+body.dark {
+  .values {
+    h5,p {
+      color: #fff;
+    }
+  }
+}
+
+section.testimonial {
+  h5.main-title {
+    margin-bottom: 15px;
+  }
+
+  .image {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/home/portrait-beautiful-smiling-woman-with-curly-hair-looking-camera_1098-20801 1.svg");
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+
+    &.framed:after {
+      content: "";
+      width: 80%;
+      height: 70px;
+      background: #000aef;
+      z-index: -1;
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+    }
+  }
+
+  .small-1 {
+    font-weight: 600;
+    color: #000;
+    transition: color $trans-delay $bezier;
+
+    span {
+      display: block;
+      line-height: 1.8;
+    }
+  }
+
+  .wrap-1 {
+    width: 300px;
+
+    @media #{$small_mobile} {
+      margin-top: 50px;
+    }
+
+    > p {
+      color: #000;
+      transition: color $trans-delay $bezier;
+    }
+  }
+
+  .hr-1 {
+    margin: 80px auto 35px;
+    height: 2px;
+    background: #8e8484;
+    width: 95%;
+  }
+
+  .customers {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+
+    > .col-4 {
+      position: relative;
+
+      img {
+        transition: opacity $trans-delay $bezier;
+      }
+
+      img:nth-of-type(1) {
+        opacity: 1;
+      }
+      
+      img:nth-of-type(2) {
+        position: absolute;
+        left: 0;
+        top:0;
+        opacity: 0;
+      }
+    }
+
+    img {
+      // width: 100%;
+      height: 20px;
+
+      @media #{$mobile} {
+        margin-bottom: 20px;
+        height: 17px;
+      }
+    }
+  }
+}
+
+body.dark {
+  section.testimonial {
+    .wrap-1 {
+      > p {
+        color: #fff;  
+      }
+    }
+
+    .small-1 {
+      color: #fff;
+    }
+
+    .customers {
+      > .col-4 {
+        img:nth-of-type(1) {
+          opacity: 0;
+        }
+        
+        img:nth-of-type(2) {
+          opacity: 1;
+          left: calc(50% - 39px);
+        }
+      }
+    }
+  }
+}
+
+.values {
+  > .col-sm-4 {
+    @media #{$mobile} {
+      margin-bottom: 20px;
+    }
+  }
+}
+

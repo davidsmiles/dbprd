@@ -1,0 +1,74 @@
+.s-swtich input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.s-swtich label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 23px;
+    background: #C4C4C4;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    margin: 0;
+}
+
+.s-swtich label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 90px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.s-swtich input:checked+label {
+    background: $theme-color1;
+}
+
+.s-swtich input:checked+label:after {
+    left: calc(100% - 5px);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.s-swtich label:active:after {
+    width: 40px;
+}
+
+.s-settings {
+    margin-bottom: 30px;
+}
+
+.s-settings p {
+    color: #888383;
+    font-size: 14px;
+}
+
+.s-sw-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+}
+
+.s-sw-title h5 {
+    font-size: 16px;
+    color: #555;
+}

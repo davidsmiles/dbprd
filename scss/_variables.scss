@@ -1,0 +1,47 @@
+/* device events */
+$ev-width: 200px;
+$ev-height: 120px;
+$ev-descr-size: 150px;
+$ev-descr-color: #ccc;
+$branch-thickness: 5px;
+$stem-color: #888;
+$branch-color: #000;
+$node-color: #000;
+//top and bottom padding for events container
+$ev-vpad: ($ev-descr-size - $ev-height)/2 ;
+
+
+/*timing functions*/
+$bezier: ease;
+$wokineBezier: cubic-bezier(0.9, 0, 0.01, 1);
+$trans-delay: 0.3s;
+
+//colors
+$theme-color1: #000AEF;
+
+//dimensions
+$headerHeight: 80px;
+$pPromptWidth: 30px;
+$navContWidth: 200px; 
+$text-small: 11px;
+$text-regular: 14px;
+$text-btn: 18px;
+$text-nav: 28px;
+
+
+//style mappings
+$bgs-sec1: (sec1: #379683, sec2: #5CDB95, sec3: #8EE4AF, sec4: #ccc);
+$navLinksMap: (navLink1: hsl(209°, 91%, 60%), navLink2: #379683, navLink3: #5CDB95, navLink4: #8EE4AF, navLink5: #ccc);
+
+//Media queries
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$tab:'(max-width: 991px)';
+$mobile: '(max-width: 768px)';
+$small_mobile:'(max-width: 576px)';
+$xs_mobile:'(max-width: 420px)';
+$sm_mobile:'only screen and (min-width: 421px) and (max-width: 575px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1440px)';
+$extra_big_screen: 'only screen and (min-width: 1200px) and (max-width: 3640px)';
+

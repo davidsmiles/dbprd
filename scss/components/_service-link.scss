@@ -1,0 +1,56 @@
+.service-links {
+}
+
+.service-link {
+  background-color: #e1e1e1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  transform: scale(1);
+  transition: transform $trans-delay $bezier;
+
+  @media #{$small_mobile} {
+    padding: 10px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: hsl(0,0%,68.2%);
+
+    svg {
+      left: 20px;
+
+      g {
+        fill: $theme-color1;
+      }
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    color: #000;
+
+    @media #{$mobile} {
+      font-size: 16px;
+    }
+
+    @media #{$small_mobile} {
+      font-size: 15px;
+      overflow-wrap: break-word;
+    }
+  }
+
+  svg {
+    width: 30px;
+    position: relative;
+    left: 0;
+    transition: left $trans-delay $bezier;
+
+    g {
+      transition: fill $trans-delay $bezier;
+    }
+
+  }
+}
