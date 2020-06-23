@@ -268,7 +268,7 @@
             <div class="row align-items-center m-0 w-100">
               <div class="col-12 col-md-8">
                 <span class="title">
-                  Web & Mobile App Development
+                  Web & Mobile Apps
                 </span>
               </div>
               <div class="col-12 col-md-4">
